@@ -18,8 +18,7 @@ def func(pickle_file):
 
     ):  
         pickle_list = pickle.load(f_pickle)
-        csv_colums = list(pickle_list[0].keys())
-        writer = csv.DictWriter(f_csv, fieldnames=csv_colums)
+        writer = csv.DictWriter(f_csv, fieldnames=pickle_list[0])
 
         writer.writeheader()
         for item in pickle_list:
