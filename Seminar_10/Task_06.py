@@ -13,9 +13,9 @@ class Factory:
         if factory_type == 'Fish':
             return Fish(*args, **kwargs)
         elif factory_type == 'Bird':
-            return Bird(*args,**kwargs)
+            return Bird(*args, **kwargs)
         elif factory_type == 'Mammals':
-            return Mammals(*args,**kwargs)
+            return Mammals(*args, **kwargs)
         else:
             return f'Не удалось опреледить тип животного'
 
