@@ -11,7 +11,6 @@ END = 100
 
 class Matrix:
     
-    matrix = []
     def __init__(self, rows, columns):
         self.rows = rows
         self.columns = columns
